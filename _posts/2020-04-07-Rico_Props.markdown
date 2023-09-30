@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2020-04-07
-img: ricoProps_012.png
+img: BibleAR_props_01.png
 alt: image-alt
 project-date: April 2020
 client: Immersive History

@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2020-07-31
-img: sheepPack_v002_01.PNG
+img: DvG_sheepPack.PNG
 alt: image-alt
 project-date: July 2020
 client: Immersive History
