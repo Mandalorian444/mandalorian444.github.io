@@ -24,6 +24,9 @@ color:
   primary-rgb: "24,128,188" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
+  tertiary: 212121
+  text-light: fff
+  text-portfolio-item: fff
 
 # Build settings
 markdown: kramdown
