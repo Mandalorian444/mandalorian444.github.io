@@ -60,7 +60,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #{{ site.color.text-light }};
 }
 
 hr.star-light:after {
@@ -69,7 +69,7 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #{{ site.color.secondary }};
+    border-color: #{{ site.color.text-portfolio-item }};
 }
 
 hr.star-primary:after {
@@ -83,7 +83,7 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #{{ site.color.text-light }};
     background: #{{ site.color.primary }};
 }
 
@@ -112,8 +112,10 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        /* padding after header and before main head content */
+        padding-top: 125px;
+        /* padding after main head blurb and portfolio section */
+        padding-bottom: 50px;
     }
 
     header .intro-text .name {
@@ -127,7 +129,8 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        /* padding for top navbar */
+        padding: 5px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -141,7 +144,8 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        /* padding shrinks to this when scrolled down far enough */
+        padding: 0px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -173,7 +177,8 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    /* global section padding */
+    padding: 50px 0;
 }
 
 section h2 {
@@ -182,7 +187,9 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    /* about section text color */
+    color: #{{ site.color.text-light }};
+    /* about section background color */
     background: #{{ site.color.primary }};
 }
 
@@ -212,7 +219,9 @@ section.success {
     position: absolute;
     width: 100%;
     height: 100%;
+    /* default overlay opacity when not hovered */
     opacity: 0;
+    /* portfolio item hover overlay color */
     background: rgba({{ site.color.primary-rgb }},.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
@@ -220,7 +229,8 @@ section.success {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+    /* opacity of overlay when hovering portfolio images */
+    opacity: 0.5;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -231,6 +241,7 @@ section.success {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
+    /* overlay icon color */
     color: #fff;
 }
 
@@ -269,6 +280,7 @@ section.success {
   @media (min-width: 960px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
       flex: 1 0 32%;
+      /* max width of portfolio image as a percentage of images original width */
       max-width: 32%;
     }
   }
@@ -423,11 +435,17 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    /* background color for portfolio post pop-ups */
+    background-color: #{{ site.color.tertiary }};
+    /* content text color for portfolio post pop-ups */
+    color: #{{ site.color.text-portfolio-item }};
 }
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
+    /* portfolio pop-up title text color */
+    color: #{{ site.color.text-portfolio-item }};
 }
 
 .portfolio-modal .modal-content img {
@@ -436,6 +454,8 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
+    /* portfolio pop-up details text color */
+    color: #{{ site.color.text-portfolio-item }};
 }
 
 .portfolio-modal .close-modal {
