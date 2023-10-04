@@ -4,6 +4,46 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.image-wipe-container {
+    height: 62.5vmin;
+    /* comment out width once we can set height correctly */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wipe-container img {
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+}
+
+[id^="img"][id$="-2"] {
+    clip-path: polygon(0 0 , 50% 0, 50% 100%, 0 100%);
+}
+
+.slider {
+    position: relative;
+    -webkit-appearance: none;
+    width: calc( 100% + 40px);
+    height: 100%;
+    margin-left: -20px;
+    background-color: transparent;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 45px;
+    width: 45px;
+    background: url(“slider-icon.svg”),
+    rgba(255,255,255,0.3);
+    border: 4px solid white;
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+}
+
 body {
     overflow-x: hidden;
     background-color: #1f2021;

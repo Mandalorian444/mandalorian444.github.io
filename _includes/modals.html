@@ -1,4 +1,14 @@
 <!-- Portfolio Modals -->
+
+<script>
+function slide(id, img){
+    let slideValue = document.getElementById(id).value;
+    document.getElementById(img).style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+}
+
+</script>
+
 {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
   aria-hidden="true">
@@ -15,7 +25,9 @@
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
+            {% if post.img %}
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% endif %}
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
@@ -36,6 +48,22 @@
               </li>
               {% endif %}
             </ul>
+            {{ post.content }}
+            {% if post.doimgs %}
+              {% for cont in post.doimgs %}
+              {% if cont.size > 1 %}
+              {% capture contindex %}{{ forloop.index }}{% endcapture %}
+              <div class=image-wipe-container>
+                {% for img in cont %}
+                  <img id="img{{ contindex }}-{{ forloop.index }}" src="img/portfolio/{{ img }}" class="img-responsive img-centered"/>
+                {% endfor %}
+                <input class="slider" type="range" min="0" max="100" value="50" id="slider{{ forloop.index }}" oninput="slide('slider{{ forloop.index }}', 'img{{ contindex }}-{{ cont.size }}')"/>
+              </div>
+              {% else %}
+              <img src="img/portfolio/{{ cont }}" class="img-responsive img-centered">
+              {% endif %}
+              {% endfor %}
+            {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>
