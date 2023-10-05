@@ -6,7 +6,6 @@ function slide(id, img){
     document.getElementById(img).style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
     console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
 }
-
 </script>
 
 {% for post in site.posts %}
@@ -61,6 +60,11 @@ function slide(id, img){
               </div>
               {% else %}
               <img src="img/portfolio/{{ cont }}" class="img-responsive img-centered">
+              {% endif %}
+              {% if post.notes %}
+                {% if post.notes.size >= forloop.index0 %}
+                <p class="post-notes">{{ post.notes[forloop.index0] }}</p>
+                {% endif %}
               {% endif %}
               {% endfor %}
             {% endif %}
