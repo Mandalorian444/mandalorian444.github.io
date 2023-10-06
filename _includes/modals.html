@@ -9,6 +9,7 @@ function slide(id, img){
 </script>
 
 {% for post in site.posts %}
+{% capture postindex %}{{ forloop.index }}{% endcapture %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
@@ -50,22 +51,24 @@ function slide(id, img){
             {{ post.content }}
             {% if post.doimgs %}
               {% for cont in post.doimgs %}
-              {% if cont.size > 1 %}
-              {% capture contindex %}{{ forloop.index }}{% endcapture %}
-              <div class=image-wipe-container>
-                {% for img in cont %}
-                  <img id="img{{ contindex }}-{{ forloop.index }}" src="img/portfolio/{{ img }}" class="img-responsive img-centered"/>
-                {% endfor %}
-                <input class="slider" type="range" min="0" max="100" value="50" id="slider{{ forloop.index }}" oninput="slide('slider{{ forloop.index }}', 'img{{ contindex }}-{{ cont.size }}')"/>
-              </div>
-              {% else %}
-              <img src="img/portfolio/{{ cont }}" class="img-responsive img-centered">
-              {% endif %}
-              {% if post.notes %}
-                {% if post.notes.size >= forloop.index0 %}
-                <p class="post-notes">{{ post.notes[forloop.index0] }}</p>
+                {% if cont.size > 1 %}
+                  {% capture contindex %}{{ forloop.index }}{% endcapture %}
+                  <div class=image-wipe-container>
+                    <div class="image-wipe-imgs">
+                    {% for img in cont %}
+                      <img id="img{{ postindex }}-{{ contindex }}-{{ forloop.index }}" src="img/portfolio/{{ img }}" class="img-responsive img-centered"/>
+                    {% endfor %}
+                    </div>
+                    <input class="slider" type="range" min="0" max="100" value="50" id="slider{{ postindex }}-{{ forloop.index }}" oninput="slide('slider{{ postindex }}-{{ forloop.index }}', 'img{{ postindex }}-{{ contindex }}-{{ cont.size }}')"/>
+                  </div>
+                {% else %}
+                  <img src="img/portfolio/{{ cont }}" class="img-responsive img-centered">
                 {% endif %}
-              {% endif %}
+                {% if post.notes %}
+                  {% if post.notes.size >= forloop.index0 %}
+                    <p class="post-notes">{{ post.notes[forloop.index0] }}</p>
+                  {% endif %}
+                {% endif %}
               {% endfor %}
             {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
