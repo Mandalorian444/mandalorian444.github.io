@@ -1,0 +1,22 @@
+---
+layout: default
+modal-id: 5
+date: 2017-01-01
+img: T-70_X-Wing_01.png
+doimgs:
+ - - T-70_X-Wing_rear.png
+ - - T-70_X-Wing_cockpit.png
+ - - T-70_X-Wing_landing_gear.png
+ - - T-70_X-Wing_landed.png
+ - - T-70_X-Wing_action_01.png
+alt: image-alt
+project-date: 2016-2017
+category: Personal project
+description: The design of this X-Wing really appealed to me and I decided it would be a good personal project to learn various disciplines from subdivision surface modeling to texturing and some amount of rigging.
+notes:
+ - Working from what little reference was available at the time, I gathered measurements for as many aspects of the design as possible and modeled them as accurately as I could.
+ - The cockpit had some very unique shapes and took some time to make sure it was not only accurate but also would fit inside the overall model correctly.
+ - Landing gear is one of the least seen parts of this ship, but getting it right was essential.
+ - Rigging made it much simpler to pose the model in different ways, including lifting the canopy.  While not perfect, I'm statisfied with some of the smaller details of the rig, mostly the hinges for the canopy which can only be appreciated in motion.
+ - Of course I had to have some fun with it when it was complete enough.
+---
