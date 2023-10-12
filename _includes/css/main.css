@@ -156,10 +156,10 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        /* padding after header and before main head content */
-        padding-top: 125px;
-        /* padding after main head blurb and portfolio section */
-        padding-bottom: 50px;
+        /* padding after nav and before header content */
+        padding-top: {{ site.padding.header-vertical }} + {{ site.padding.nav-vertical }};
+        /* padding after header blurb and portfolio section */
+        padding-bottom: {{ site.padding.header-vertical }};
     }
 
     header .intro-text .name {
@@ -174,7 +174,7 @@ header .intro-text .skills {
 @media(min-width:768px) {
     .navbar-fixed-top {
         /* padding for top navbar */
-        padding: 5px 0;
+        padding: {{ site.padding.nav-vertical }} 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -189,7 +189,7 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink {
         /* padding shrinks to this when scrolled down far enough */
-        padding: 0px 0;
+        padding: {{ site.padding.nav-vertical-small }} 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {

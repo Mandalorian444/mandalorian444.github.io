@@ -28,6 +28,12 @@ color:
   text-light: fff
   text-portfolio-item: fff
 
+# Padding settings
+padding:
+  nav-vertical: 5px
+  nav-vertical-small: 0px
+  header-vertical: 50px
+
 # Build settings
 markdown: kramdown
 permalink: pretty
