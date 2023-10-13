@@ -317,7 +317,7 @@ section.success {
     .portfolio-flex-grid .portfolio-flex-row {
       display: flex;
       flex-flow: row wrap;
-      align-items: stretch;
+      align-items: center;
       justify-content: space-between;
     }
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
@@ -329,7 +329,9 @@ section.success {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
       flex: 1 0 32%;
       /* max width of portfolio image as a percentage of images original width */
-      max-width: 32%;
+      max-width: 35rem;
+      max-height: 20rem;
+      overflow: hidden;
     }
   }
   /* A large grid might need four columns on widescreen layouts */
