@@ -28,6 +28,10 @@ color:
   text-light: fff
   text-portfolio-item: fff
 
+# Footer settings
+footer:
+  copyright: Tyson Benard
+
 # Padding settings
 padding:
   nav-vertical: 5px
