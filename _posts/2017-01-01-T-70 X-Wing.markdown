@@ -10,7 +10,7 @@ doimgs:
  - - T-70_X-Wing_landed.png
  - - T-70_X-Wing_action_01.png
 alt: image-alt
-project-date: 2016-2017
+project-date: 2015-2017
 category: Personal project
 description: The design of this X-Wing really appealed to me and I decided it would be a good personal project to learn various disciplines from subdivision surface modeling to texturing and some amount of rigging.
 notes:
