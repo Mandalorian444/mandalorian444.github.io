@@ -2,10 +2,10 @@
 layout: default
 modal-id: 1
 date: 2020-07-28
-img: DvG_tent.PNG
+img: DvG_tent.png
 doimgs:
- - - DvG_sheepPack_wire.PNG
-   - DvG_sheepPack_result.PNG
+ - - DvG_sheepPack_wire.png
+   - DvG_sheepPack_result.png
 alt: image-alt
 project-date: July 2020
 client: Immersive History

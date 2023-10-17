@@ -5,7 +5,7 @@ date: 2020-04-07
 img: BibleAR_props_01.png
 doimgs:
  - - BibleAR_props_02.png
- - - BibleAR_props_03.PNG
+ - - BibleAR_props_03.png
 alt: image-alt
 project-date: April 2020
 client: Immersive History
