@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 7
-date: 2017-01-01
+date: 2023-02-01
 img: Jerusalem_VR_01.png
 doimgs:
  - - Jerusalem_VR_02.png
@@ -17,7 +17,7 @@ client: Immersive History
 category: VR
 description: Recreating Jerusalem in VR as it stood at various historical periods was the biggest theme during my time at Immersive History.
 notes:
- - To optimize the scenes for VR, as well as make it easier to add as much detail as possible, creating a few distinct models and instancing them a lot proved effective.  Care had to be taken to construct the original objects to the correct dimensions so they would match up perfectly when instanced without leaving gaps or extending over edges.  This was especially true since some of the historical dimensions of many of the buildings were well established.
+ - To optimize the scenes for VR, as well as make it easier to add as much detail as possible, it was most effective to instance just a few distinct models around the scene.  Care had to be taken to construct the original objects to the correct dimensions so they would match up perfectly when instanced without leaving gaps or extending over edges.  This was especially true since many of the historical dimensions of the buildings were well established.
  - Other artists had worked on these scenes over time, but their models didn't always line up.  When the scenes were being assembled into their final forms I would modify assets where needed to make sure everything lined up properly.  This sometimes required readjusting UV layouts, improving instanced geometry and creating new details where needed.
  - Building models were provided by others on the team and I placed them in the city.  There are many different types ranging from stacked houses to small homes to large mansions.  Location in the city was important, but also making sure they sat nicely on the terrain and didn't intersect other buildings or landmarks in unrealistic ways.
  - We catered to different clients and provided VR applications suited to their needs.  This particular model was for "Wisdom in Torah Ministries" that wanted accurate models of Jerusalem based on their archeological research.

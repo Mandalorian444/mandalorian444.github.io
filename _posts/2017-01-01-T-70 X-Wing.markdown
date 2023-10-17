@@ -12,7 +12,7 @@ doimgs:
 alt: image-alt
 project-date: 2015-2017
 category: Personal project
-description: The design of this X-Wing really appealed to me and I decided it would be a good personal project to learn various disciplines from subdivision surface modeling to texturing and some amount of rigging.
+description: The design of this X-Wing really appealed to me and I decided it would be a good personal project to learn various disciplines from subdivision surface modeling to texturing and rigging.
 notes:
  - Working from what little reference was available at the time, I gathered measurements for as many aspects of the design as possible and modeled them as accurately as I could.
  - The cockpit had some very unique shapes and took some time to make sure it was not only accurate but also would fit inside the overall model correctly.
