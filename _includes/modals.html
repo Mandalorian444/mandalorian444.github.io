@@ -2,9 +2,11 @@
 
 <script>
 function slide(id, img){
+  if (document.documentElement.clientWidth > 767) {
     let slideValue = document.getElementById(id).value;
     document.getElementById(img).style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
     console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+  }
 }
 </script>
 
