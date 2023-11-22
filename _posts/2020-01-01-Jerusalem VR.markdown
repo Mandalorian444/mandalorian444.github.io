@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 7
-date: 2023-02-01
+date: 2017-01-01
 img: Jerusalem_VR_01.png
 doimgs:
  - - Jerusalem_VR_02.png
