@@ -223,11 +223,23 @@ section h2 {
     }
 }
 
+.section-header {
+    /* so scrolling to it leaves a little space above title */
+    padding-top: 0.5rem;
+}
+
 section.success {
     /* about section text color */
     color: #{{ site.color.text-light }};
     /* about section background color */
     background: #{{ site.color.primary }};
+}
+
+section.secondary {
+    /* about section text color */
+    color: #{{ site.color.text-light }};
+    /* about section background color */
+    background: #{{ site.color.secondary }};
 }
 
 @media(max-width:767px) {
