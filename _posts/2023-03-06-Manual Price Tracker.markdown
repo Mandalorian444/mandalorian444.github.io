@@ -2,9 +2,9 @@
 layout: default
 modal-id: 8
 date: 2023-03-06
-img: MPT_example_01.png
+img: MPT_example_01.webp
 doimgs:
- - - MPT_example_02.png
+ - - MPT_example_02.webp
 alt: image-alt
 project-date: 2023
 category: Personal project

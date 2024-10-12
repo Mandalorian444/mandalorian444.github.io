@@ -2,13 +2,13 @@
 layout: default
 modal-id: 5
 date: 2017-01-01
-img: T-70_X-Wing_01.png
+img: T-70_X-Wing_01.webp
 doimgs:
- - - T-70_X-Wing_rear.png
- - - T-70_X-Wing_cockpit.png
- - - T-70_X-Wing_landing_gear.png
- - - T-70_X-Wing_landed.png
- - - T-70_X-Wing_action_01.png
+ - - T-70_X-Wing_rear.webp
+ - - T-70_X-Wing_cockpit.webp
+ - - T-70_X-Wing_landing_gear.webp
+ - - T-70_X-Wing_landed.webp
+ - - T-70_X-Wing_action_01.webp
 alt: image-alt
 project-date: 2015-2017
 category: Personal project

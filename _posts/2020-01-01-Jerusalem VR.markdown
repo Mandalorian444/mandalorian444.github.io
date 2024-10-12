@@ -2,15 +2,15 @@
 layout: default
 modal-id: 7
 date: 2017-01-01
-img: Jerusalem_VR_01.png
+img: Jerusalem_VR_01.webp
 doimgs:
- - - Jerusalem_VR_02.png
- - - Jerusalem_VR_03.png
- - - Jerusalem_VR_04.png
- - - Jerusalem_VR_05.png
- - - Jerusalem_VR_06.png
- - - Jerusalem_VR_07.png
- - - Jerusalem_VR_08.png
+ - - Jerusalem_VR_02.webp
+ - - Jerusalem_VR_03.webp
+ - - Jerusalem_VR_04.webp
+ - - Jerusalem_VR_05.webp
+ - - Jerusalem_VR_06.webp
+ - - Jerusalem_VR_07.webp
+ - - Jerusalem_VR_08.webp
 alt: image-alt
 project-date: 2017-2020
 client: Immersive History

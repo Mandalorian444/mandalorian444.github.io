@@ -2,10 +2,10 @@
 layout: default
 modal-id: 6
 date: 2023-01-01
-img: Skinnyflex.png
+img: Skinnyflex.webp
 doimgs:
- - - Return_of_the_4th.png
- - - E-11_blaster.png
+ - - Return_of_the_4th.webp
+ - - E-11_blaster.webp
 alt: image-alt
 project-date: 2021-2023
 category: Personal project

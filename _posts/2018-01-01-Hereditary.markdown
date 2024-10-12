@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2017-01-01
-img: Hereditary_light_01.png
+img: Hereditary_light_01.webp
 alt: image-alt
 project-date: 2017
 client: 4th Wall FX

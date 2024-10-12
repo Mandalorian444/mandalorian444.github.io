@@ -2,10 +2,10 @@
 layout: default
 modal-id: 2
 date: 2020-04-07
-img: BibleAR_props_01.png
+img: BibleAR_props_01.webp
 doimgs:
- - - BibleAR_props_02.png
- - - BibleAR_props_03.png
+ - - BibleAR_props_02.webp
+ - - BibleAR_props_03.webp
 alt: image-alt
 project-date: April 2020
 client: Immersive History

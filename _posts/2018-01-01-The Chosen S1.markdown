@@ -3,12 +3,12 @@ layout: default
 modal-id: 3
 date: 2017-01-01
 # thumbnail image
-img: Chosen_01_B.png
+img: Chosen_01_B.webp
 doimgs:
- - - Chosen_01_B.png
-   - Chosen_01_A.png
- - - Chosen_02_B.png
-   - Chosen_02_A.png
+ - - Chosen_01_B.webp
+   - Chosen_01_A.webp
+ - - Chosen_02_B.webp
+   - Chosen_02_A.webp
 alt: image-alt
 project-date: 2017
 client: 4th Wall FX
