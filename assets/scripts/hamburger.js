@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         const toggleMenu = (event) => {
-            event.preventDefault(); // Prevents default touch behavior if needed
+            event.preventDefault();
             navMenu.classList.toggle("active");
+            hamburger.classList.toggle("active");
         };
 
-        const debouncedToggleMenu = debounce(toggleMenu, 200); // 200ms delay
+        const debouncedToggleMenu = debounce(toggleMenu, 200);
 
         hamburger.addEventListener("click", debouncedToggleMenu);
         hamburger.addEventListener("touchstart", debouncedToggleMenu);
