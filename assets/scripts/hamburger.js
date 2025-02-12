@@ -26,5 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         hamburger.addEventListener("click", debouncedToggleMenu);
         hamburger.addEventListener("touchstart", debouncedToggleMenu);
+
+        // Close menu when clicking on a menu item
+        document.querySelectorAll(".nav-menu a").forEach((item) => {
+            item.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
     }
 });
