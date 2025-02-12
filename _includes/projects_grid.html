@@ -7,7 +7,7 @@
         {% for project in site.projects reversed limit:9%}
         <div class="project-item">
             <a href="{{ project.url }}" class="project-link">
-                <img src="img/portfolio/{{ project.img }}" alt="{{ project.alt }}" />
+                <img src="img/portfolio/{{ project.thumb }}" alt="{{ project.alt }}" />
                 <div class="overlay">
                     <span class="project-name">{{ project.title }}</span>
                 </div>

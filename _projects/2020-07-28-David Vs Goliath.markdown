@@ -2,6 +2,7 @@
 layout: project
 modal-id: 1
 date: 2020-07-28
+thumb: DvG_thumb.webp
 img: DvG_tent.webp
 doimgs:
  - - DvG_sheepPack_wire.webp

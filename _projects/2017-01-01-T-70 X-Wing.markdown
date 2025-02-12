@@ -2,6 +2,7 @@
 layout: project
 modal-id: 5
 date: 2017-01-01
+thumb: T-70_X-Wing_thumb.webp
 img: T-70_X-Wing_01.webp
 doimgs:
  - - T-70_X-Wing_rear.webp

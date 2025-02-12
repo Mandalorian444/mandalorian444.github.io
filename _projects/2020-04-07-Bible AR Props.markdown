@@ -2,6 +2,7 @@
 layout: project
 modal-id: 2
 date: 2020-04-07
+thumb: BibleAR_props_thumb.webp
 img: BibleAR_props_01.webp
 doimgs:
  - - BibleAR_props_02.webp

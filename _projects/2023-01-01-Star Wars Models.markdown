@@ -2,6 +2,7 @@
 layout: project
 modal-id: 6
 date: 2023-01-01
+thumb: SW_models_thumb.webp
 img: Skinnyflex.webp
 doimgs:
  - - Return_of_the_4th.webp

@@ -2,6 +2,7 @@
 layout: project
 modal-id: 7
 date: 2017-01-01
+thumb: Jerusalem_VR_thumb.webp
 img: Jerusalem_VR_01.webp
 doimgs:
  - - Jerusalem_VR_02.webp

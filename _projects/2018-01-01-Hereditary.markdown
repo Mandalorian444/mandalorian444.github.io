@@ -2,6 +2,7 @@
 layout: project
 modal-id: 4
 date: 2017-01-01
+thumb: Hereditary_thumb.webp
 img: Hereditary_light_01.webp
 alt: image-alt
 project-date: 2017

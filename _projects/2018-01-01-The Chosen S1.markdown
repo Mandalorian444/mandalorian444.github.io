@@ -2,7 +2,7 @@
 layout: project
 modal-id: 3
 date: 2017-01-01
-# thumbnail image
+thumb: Chosen_thumb.webp
 img: Chosen_01_B.webp
 doimgs:
  - - Chosen_01_B.webp
