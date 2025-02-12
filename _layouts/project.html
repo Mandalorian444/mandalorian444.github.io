@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='{{ site.lang | default: "en-US" }}'>
+    {% include head.html %}
+    <script src="{{ base.url }}/assets/scripts/imgcmp.js" defer></script>
+    <body>
+        {% include nav.html %}
+        <div class="project-content default-div">
+            <h2>{{ page.title }}</h2>
+            <hr>
+            <img
+                src="{{ base.url }}/img/portfolio/{{ page.img }}"
+                alt="{{ page.alt | default: 'Project Image' }}"
+            />
+            <ul class="project-details">
+                {% if page.client %}
+                <li>
+                    Client:
+                    <strong>{{ page.client }}</strong>
+                </li>
+                {% endif %} {% if page.project-date %}
+                <li>
+                    Date:
+                    <strong>{{ page.project-date }}</strong>
+                </li>
+                {% endif %} {% if page.category %}
+                <li>
+                    Service:
+                    <strong>{{ page.category }}</strong>
+                </li>
+                {% endif %}
+            </ul>
+            <p>{{ page.description }}</p>
+            {% if page.doimgs %}
+              {% for cont in page.doimgs %}
+                {% if cont.size > 1 %}
+                  {% capture contindex %}{{ forloop.index }}{% endcapture %}
+                  <div class="image-wipe-container">
+                    {% for img in cont %}
+                      <img src="{{ base.url }}/img/portfolio/{{ img }}" wipeimg="{{ forloop.index }}"/>
+                    {% endfor %}
+                  </div>
+                {% else %}
+                  <img src="{{ base.url }}/img/portfolio/{{ cont }}">
+                {% endif %}
+                {% if page.notes %}
+                  {% if page.notes.size >= forloop.index0 %}
+                    <p class="page-notes">{{ page.notes[forloop.index0] }}</p>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

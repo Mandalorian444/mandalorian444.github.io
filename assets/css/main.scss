@@ -1,0 +1,597 @@
+---
+---
+
+@import "base";
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+//  Default background color
+body {
+    background-color: rgb({{site.colors.background}});
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.default-div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+}
+
+header {
+    height: 500px;
+    border-bottom: double;
+    border-color: rgb({{site.colors.section-border}});
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+hr {
+    max-width: 250px;
+    margin-bottom: 1rem;
+    border: solid rgb({{site.colors.horizontal-rule}}) 2px;
+    border-radius: 3px;
+}
+
+a {
+    color: rgb(82, 151, 255);
+}
+
+section[id] {
+    border-bottom: double;
+    border-color: rgb({{site.colors.section-border}});
+}
+
+//  How to make this more specific to the nav section
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%;
+    max-width: 100%; /* Ensure text does not overflow horizontally */
+    text-align: center; /* Center text inside spans */
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text span {
+    font-size: 80px;
+    word-wrap: break-word;
+}
+
+.intro-text hr {
+    width: 50%;
+    margin: 20px 0; /* Space above and below the hr */
+}
+
+.intro-text .skills {
+    font-size: 30px;
+}
+
+//  Base styles for the navbar
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb({{site.colors.navbar-background}});
+    color: rgb({{site.colors.navbar-text}});
+    padding: 10px 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+}
+
+.navbar.shrink .navbar-brand h1 {
+    font-size: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style for the brand */
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+//  Styles for the navigation links
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px; /* Space between list items */
+}
+
+.nav-menu a {
+    color: rgb({{site.colors.navbar-text}});
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    transition: font-size 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: rgb({{site.colors.navbar-text-hover}});
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(
+            {{site.colors.navbar-background}}
+        ); /* Match the navbar background */
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0; /* Add vertical spacing */
+        text-align: center; /* Center text for mobile */
+    }
+}
+
+/* For larger screens */
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex !important; /* Ensure menu is visible */
+    }
+
+    .nav-menu.active {
+        position: static; /* Reset positioning */
+        width: auto; /* Reset width */
+        background-color: transparent; /* Reset background */
+    }
+
+    .nav-menu li {
+        margin: 0; /* Remove any vertical spacing */
+        margin-left: 20px; /* Revert to horizontal spacing */
+    }
+}
+
+//  Grok generated navbar shrinking
+
+.navbar.shrink .navbar-links a {
+    font-size: 18px; /* Smaller size for shrunken state */
+}
+// - - - - End navbar section - - - -
+
+section {
+    /* global section padding */
+    padding: 20px 0;
+}
+
+/* List for proficiencies and about sections*/
+.two-column-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.two-column-list {
+    list-style: none;
+    padding: 0;
+    margin: 5%;
+    column-count: 2;
+    column-gap: 40px;
+    text-align: center;
+}
+
+.two-column-list li {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+.two-column-list a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.two-column-list p {
+    text-align: justify;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .two-column-list p {
+        text-align: left;
+    }
+}
+
+#projects {
+    background-color: rgb({{site.colors.projects-background}});
+    color: white;
+}
+
+#proficiencies {
+    background-color: #2c3e50;
+    color: white;
+}
+
+#proficiencies a {
+    color: rgb({{site.colors.proficiencies-text}});
+    font-size: 20px;
+}
+
+#about {
+    background-color: rgb({{site.colors.about-background}});
+    color: white;
+}
+
+// Project styling
+#projects {
+    /* Optional styling for the section */
+    padding: 20px 0;
+}
+.project-content {
+    max-width: 1200px; /* Standard width, adjust as needed */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Optional padding for inner content */
+    text-align: center; /* Center text */
+}
+
+.project-content img {
+    max-width: 100%; /* Ensure images do not exceed container width */
+    max-height: 800px;
+    height: auto; /* Maintain aspect ratio of images */
+    display: block; /* Remove any bottom spacing from inline-block elements */
+    margin: 0 auto 20px; /* Center images with some bottom margin */
+}
+
+.project-details li {
+    margin: 30px 0;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.image-wipe-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wipe-container img {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    margin: 0;
+}
+
+.image-wipe-container img[wipeimg="2"] {
+    position: absolute;
+    clip-path: inset(0 50% 0 0);
+}
+
+/* Handle styling */
+.wipe-handle {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: ew-resize;
+    z-index: 10;
+    transform: translateX(-50%);
+    touch-action: none;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Add grip dots to the handle */
+.wipe-handle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 2px;
+    transform: translate(-50%, -50%);
+    pointer-events: all;
+}
+
+/* Active state */
+.wipe-handle.dragging {
+    cursor: ew-resize;
+}
+
+/* Handle hover effects */
+.wipe-handle.hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: 150ms;
+}
+
+// Portfolio-grid styling
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* Space between grid items */
+    max-width: calc(400px * 3 + 20px * 2); /* 3 columns with gap */
+    margin: 0 5%;
+    background-color: rgb({{site.colors.background-darker}});
+
+    //  Stylistic grid border
+    border: rgba({{site.colors.primary-rgb}}, 0.5);
+    border-style: solid;
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+.project-item {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden; /* Ensures the overlay doesn't overflow */
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-link img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project-link:hover img {
+    transform: scale(1.1); /* Scale up the image */
+    filter: brightness(0.7); /* Darken the image */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-link:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+}
+
+.project-name {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 10px;
+    text-shadow: 1px 1px 2px black; /* Optional for better readability */
+}
+
+/* Adjust for smaller screens if needed */
+@media screen and (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        max-width: 100%;
+    }
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove any extra spacing below images */
+}
+
+/* Optional: for ensuring we don't exceed 3 columns on very wide screens */
+@media screen and (min-width: 1240px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .portfolio-grid {
+        margin: 0 auto;
+    }
+}
+
+// v v v Article specific styling v v v
+
+.articles {
+    text-align: center;
+}
+
+.articles a {
+    font-size: 40px;
+}
+
+.articles li {
+    display: inline-block;
+    //  Uncomment for darker post section backgrounds if desired
+    // background-color: rgb({{site.colors.background-darker}});
+}
+
+.articles h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.article-content {
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto;
+}
+@media screen and (max-width: 1030px) {
+    .article-content {
+        margin: 0 5%;
+    }
+}
+
+.article-content h2 {
+    margin-bottom: 0;
+}
+
+.post-details {
+    margin: 0;
+}
+
+.post-details li {
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.language-plaintext.highlighter-rouge {
+    color: rgb(255, 177, 94);
+    font-family: Courier New, monospace;
+}
+
+/* Below is style for C++ syntax highlighting generated for Markdown*/
+
+pre {
+    background-color: rgb(28, 28, 28);
+    text-align: left;
+    width: 80%;
+    // margin-left: 20%;
+    margin: auto;
+    // padding: 10px 10px;
+    outline-style: solid;
+    border-radius: 0.5rem;
+    white-space: pre-wrap;
+    outline-color: rgb({{site.colors.section-border}});
+}
+
+pre.highlight code .line-number {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 0.5rem; /* Padding around the number */
+    display: inline-block; /* Ensures the background extends behind the number */
+    width: 1rem;
+}
+
+pre.highlight code .line-color {
+    background-color: rgba(50, 50, 50, 0.5);
+    display: inline-block;
+    width: 100%;
+}
+
+pre.highlight code > span:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Namespace and NameClass*/
+code .n,
+code .nc {
+    color: #4ec9b0;
+}
+
+/* KeyType and access specifiers*/
+code .kt,
+code .nl {
+    color: #569cd6;
+}
+
+/* Keyword */
+code .k {
+    color: #c586c0;
+}
+
+/* NameFunction */
+code .nf {
+    color: #dcdcaa;
+}
+
+/* Input parameter */
+code .mi {
+    color: #4fc1ff;
+}
+
+/* Key Resolution??? */
+code .kr {
+    color: #4ec9b0;
+}
+
+/* Punctuation and Operators */
+code .p,
+code .o {
+    color: #b4b4b4;
+}
+
+.row p {
+    text-align: justify;
+}

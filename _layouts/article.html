@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='{{ site.lang | default: "en-US" }}'>
+    {% include head.html %}
+    <script src="{{ base.url }}/assets/scripts/linenum.js" defer></script>
+    <body>
+        {% include nav.html %}
+        <div class="article-content">
+            <h2>{{ page.title }}</h2>
+            <ul class="post-details">
+                <li>Posted on <strong>{{ page.date | date: "%b %e %Y" }}</strong></li>
+            </ul>
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

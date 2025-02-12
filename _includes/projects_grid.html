@@ -1,0 +1,18 @@
+<!-- Portfolio Grid Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <hr />
+    <div class="portfolio-grid">
+        <!-- TODO: Reverse the ordering -->
+        {% for project in site.projects reversed limit:9%}
+        <div class="project-item">
+            <a href="{{ project.url }}" class="project-link">
+                <img src="img/portfolio/{{ project.img }}" alt="{{ project.alt }}" />
+                <div class="overlay">
+                    <span class="project-name">{{ project.title }}</span>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>

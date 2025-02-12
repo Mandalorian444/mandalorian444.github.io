@@ -1,0 +1,11 @@
+# Main nav pages that are not simply home page extras
+- name: Home
+  link: /
+- name: Blog
+  link: /blog.html
+- name: Projects
+  link: /#projects
+- name: Proficiencies
+  link: /#proficiencies
+- name: About
+  link: /#about
