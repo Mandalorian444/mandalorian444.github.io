@@ -23,6 +23,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 40px;
+}
+
 .default-div {
     max-width: 1200px;
     margin: 0 auto;
@@ -98,7 +102,7 @@ header {
 
 //  Base styles for the navbar
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
