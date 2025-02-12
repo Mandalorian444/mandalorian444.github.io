@@ -1,6 +1,6 @@
 ---
 layout: article
-date: 2024-10-13
+date: 2025-01-12
 category: C++
 description: What data does a mutex protect?
 excerpt: Whatever data you want.
