@@ -115,8 +115,13 @@ header {
     transition: font-size 0.3s ease;
 }
 
+//  Nav font-size shrinking when scrolling down
 .navbar.shrink .navbar-brand h1 {
-    font-size: 20px;
+    font-size: 90%;
+}
+
+.navbar.shrink .nav-menu {
+    font-size: 90%;
 }
 
 .navbar-container {
@@ -230,12 +235,6 @@ header {
         margin: 0; /* Remove any vertical spacing */
         margin-left: 20px; /* Revert to horizontal spacing */
     }
-}
-
-//  Grok generated navbar shrinking
-
-.navbar.shrink .navbar-links a {
-    font-size: 18px; /* Smaller size for shrunken state */
 }
 // - - - - End navbar section - - - -
 
