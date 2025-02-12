@@ -1,9 +1,6 @@
 ---
 layout: article
-modal-id: 9
 date: 2024-10-13
-# img: 
-img: Jerusalem_VR_01.webp
 category: C++
 description: What data does a mutex protect?
 excerpt: Whatever data you want.
