@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 1
 date: 2020-07-28
 img: DvG_tent.webp

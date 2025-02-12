@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 5
 date: 2017-01-01
 img: T-70_X-Wing_01.webp

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 4
 date: 2017-01-01
 img: Hereditary_light_01.webp

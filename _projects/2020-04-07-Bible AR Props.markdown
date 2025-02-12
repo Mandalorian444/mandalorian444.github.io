@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 2
 date: 2020-04-07
 img: BibleAR_props_01.webp

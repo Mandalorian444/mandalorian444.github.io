@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 7
 date: 2017-01-01
 img: Jerusalem_VR_01.webp

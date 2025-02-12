@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 8
 date: 2023-03-06
 img: MPT_example_01.webp

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 modal-id: 3
 date: 2017-01-01
 # thumbnail image
