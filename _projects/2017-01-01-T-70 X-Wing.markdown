@@ -1,4 +1,5 @@
 ---
+title: T-70 X-Wing
 layout: project
 modal-id: 5
 date: 2017-01-01

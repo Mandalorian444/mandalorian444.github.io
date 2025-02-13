@@ -1,4 +1,5 @@
 ---
+title: Bible AR Props
 layout: project
 modal-id: 2
 date: 2020-04-07

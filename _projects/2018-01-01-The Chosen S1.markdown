@@ -1,4 +1,5 @@
 ---
+title: The Chosen S1
 layout: project
 modal-id: 3
 date: 2017-01-01

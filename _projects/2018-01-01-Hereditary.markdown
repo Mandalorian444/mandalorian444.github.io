@@ -1,4 +1,5 @@
 ---
+title: Hereditary
 layout: project
 modal-id: 4
 date: 2017-01-01

@@ -1,4 +1,5 @@
 ---
+title: Jerusalem VR
 layout: project
 modal-id: 7
 date: 2017-01-01

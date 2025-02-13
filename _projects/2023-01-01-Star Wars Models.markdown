@@ -1,4 +1,5 @@
 ---
+title: Star Wars models
 layout: project
 modal-id: 6
 date: 2023-01-01
