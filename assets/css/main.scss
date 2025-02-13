@@ -9,6 +9,7 @@ h2 {
     font-size: 2.5rem;
     text-align: center;
     margin: 20px;
+    margin-top: 0;
 }
 
 //  Default background color
@@ -28,6 +29,8 @@ html {
 .default-div {
     max-width: 1200px;
     margin: 0 auto;
+    //  Margin to compensate for navbar at top of page
+    margin-top: 80px;
 }
 
 ul {
@@ -120,6 +123,10 @@ header {
 //  Nav font-size shrinking when scrolling down
 .navbar.shrink .navbar-brand h1 {
     font-size: 90%;
+}
+
+.navbar.shrink {
+    padding: 0;
 }
 
 .navbar.shrink .nav-menu {
@@ -255,7 +262,7 @@ section {
 .two-column-list {
     list-style: none;
     padding: 0;
-    margin: 5%;
+    margin: 0 5%;
     column-count: 2;
     column-gap: 40px;
     text-align: center;
@@ -303,14 +310,9 @@ section {
 }
 
 // Project styling
-#projects {
-    /* Optional styling for the section */
-    padding: 20px 0;
-}
 .project-content {
     max-width: 1200px; /* Standard width, adjust as needed */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Optional padding for inner content */
+    padding: 0 20px; /* Optional padding for inner content */
     text-align: center; /* Center text */
 }
 
@@ -323,7 +325,7 @@ section {
 }
 
 .project-details li {
-    margin: 30px 0;
+    margin: 0 0;
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
@@ -491,8 +493,6 @@ section {
 
 .articles {
     text-align: center;
-    //  Move top of articles below navbar
-    margin-top: 80px;
 }
 
 .articles a {
@@ -506,18 +506,17 @@ section {
 }
 
 .articles h2 {
-    margin-top: 1rem;
     margin-bottom: 0;
 }
 
 .article-content {
     max-width: 1000px;
     text-align: justify;
-    margin: auto;
 }
 @media screen and (max-width: 1030px) {
     .article-content {
-        margin: 0 5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
